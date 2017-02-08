@@ -1,0 +1,25 @@
+.header {
+  height:60px;
+  background: black;
+  color:white;
+  width: 100%;
+  z-index: 12;
+  position:fixed;
+}
+
+.title-bar-left, .title-bar-left a,.title-bar-right,.title-bar-right a {
+  margin:10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color:white;
+}
+
+.title-bar-right a{
+  font-size: 2rem !important;
+}
+
+.header-small {
+  background:black;
+  color: white;
+  width:100%;
+}

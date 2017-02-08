@@ -1,0 +1,37 @@
+[
+  {
+    "nombre": "batman",
+    "duracion": "10 min",
+  },{
+    "nombre": "superman",
+    "duracion": "30 min",
+  },
+  {
+    "nombre": "batman",
+    "duracion": "10 min",
+  },{
+    "nombre": "superman",
+    "duracion": "30 min",
+  },
+  {
+    "nombre": "batman",
+    "duracion": "10 min",
+  },{
+    "nombre": "superman",
+    "duracion": "30 min",
+  },
+  {
+    "nombre": "batman",
+    "duracion": "10 min",
+  },{
+    "nombre": "superman",
+    "duracion": "30 min",
+  },
+  {
+    "nombre": "batman",
+    "duracion": "10 min",
+  },{
+    "nombre": "superman",
+    "duracion": "30 min",
+  }
+  ]
