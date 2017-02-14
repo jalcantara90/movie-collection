@@ -1,9 +1,9 @@
-movieCollection.factory('movieCollectionFactory', function($http) {
+movieCollection.factory('upComingFactory', function($http) {
   var factory = {
-            getListPopular: function () {
+            getListUpcoming: function () {
                 //returning promise
                 console.log('Factoria...');
-                return $http.get('https://api.themoviedb.org/3/movie/popular?api_key=93c5311362abee15fcceeeafefac9991')
+                return $http.get('https://api.themoviedb.org/3/movie/upcoming?api_key=93c5311362abee15fcceeeafefac9991')
                     .then(function (response) {
                         var data = response.data;
                         factory.peliculas = data;

@@ -23,3 +23,7 @@
   color: white;
   width:100%;
 }
+.resultados {
+  display: flex;
+  justify-content: center;
+}

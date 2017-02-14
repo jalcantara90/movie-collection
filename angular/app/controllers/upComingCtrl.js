@@ -1,6 +1,6 @@
-movieCollection.controller('movieCtrl' ,['$scope','movieCollectionFactory', function ($scope, movieCollectionFactory) {
+movieCollection.controller('upComingCtrl' ,['$scope','upComingFactory', function ($scope, upComingFactory) {
   // $scope.peliculas = moviCollectionFactory.getAllMovies();
-  movieCollectionFactory.getListPopular($scope.pelis).then(function (peliculas) {
+  upComingFactory.getListUpcoming($scope.pelis).then(function (peliculas) {
       $scope.peliculas = peliculas;
       console.log($scope.peliculas);
       }, function (msg) {

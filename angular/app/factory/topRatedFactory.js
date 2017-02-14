@@ -1,9 +1,9 @@
-movieCollection.factory('movieCollectionFactory', function($http) {
+movieCollection.factory('topRatedFactory', function($http) {
   var factory = {
-            getListPopular: function () {
+            getListTopRated: function () {
                 //returning promise
                 console.log('Factoria...');
-                return $http.get('https://api.themoviedb.org/3/movie/popular?api_key=93c5311362abee15fcceeeafefac9991')
+                return $http.get('https://api.themoviedb.org/3/movie/top_rated?api_key=93c5311362abee15fcceeeafefac9991')
                     .then(function (response) {
                         var data = response.data;
                         factory.peliculas = data;

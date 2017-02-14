@@ -1,36 +1,22 @@
 <section class="movie-collection-container">
   <div class="row align-center">
-    <div class="columns medium-5 titulo">
-      <h1>Movie Collection</h1>
-    </div>
-  </div>
-  <div class="row align-center">
-    <div class="columns medium-6 small-10  medium-centered buscador">
-      <div class="input-group">
-        <input  ng-model="buscarPelicula"  class="input-group-field" type="text" placeholder="Buscar..." value="">
-        <div class="input-group-button">
-          <button type="button" class="button hollow" name="button">Search!</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row align-center">
-    <div class="columns medium-6 medium-offset-4 small-10  medium-centered resultados">
-      <h4>{{peliculas.length}} Resultados</h4>
+    <div class="columns medium-6 small-10  medium-centered resultados">
+      <h4>{{ peliculas.results.length }} Resultados</h4>
     </div>
   </div>
   <div class="row expanded">
     <div class="container-peliculas">
-      <div class="columns medium-4 small-12 card-container" ng-repeat='pelicula in peliculas  | filter : {name:buscarPelicula}'>
+      <div class="columns medium-4 small-12 card-container" ng-repeat='pelicula in peliculas.results  '>
         <div class="card">
           <div class="image">
-            <img ng-src="{{pelicula.image.medium}}" src="" alt="">
+            <img ng-src="https://image.tmdb.org/t/p/w300/{{pelicula.backdrop_path}}" src="" alt="">
           </div>
           <div class="content">
-            <p><strong>{{pelicula.name}}</strong></p>
+            <p><strong>{{pelicula.original_title}}</strong></p>
+            <input type="hidden" name="" value="{{pelicula.id}}">
           </div>
           <div class="action">
-            <p>{{pelicula.premiered}}</p>
+            <p>{{pelicula.release_date}}</p>
         </div>
       </div>
     </div>
