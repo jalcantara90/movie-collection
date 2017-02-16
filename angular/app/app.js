@@ -1,1 +1,1 @@
-var movieCollection = angular.module('movieCollection', ['ngRoute'])
+var movieCollection = angular.module('movieCollection', ['ngRoute','detailMovie'])

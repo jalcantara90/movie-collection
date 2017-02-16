@@ -16,6 +16,9 @@ movieCollection.config(['$routeProvider', function($routeProvider) {
     templateUrl: 'app/templates/movieCollection.html',
     controller: 'topRatedCtrl'
   })
+  .when('/detailMovie', {
+    template: '<detail-movie-component></detail-movie-component>'
+  })
   .otherwise({
     redirectTo: '/popular'
   })
