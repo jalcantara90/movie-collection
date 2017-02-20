@@ -6,6 +6,9 @@ const {width, height, scale} = Dimensions.get("window"),
     vmax = Math.max(vw, vh);
 
 export default StyleSheet.create({
+    "h1": {
+        "fontSize": 2.5
+    },
     "buscador": {
         "marginTop": "3%"
     },
@@ -76,7 +79,8 @@ export default StyleSheet.create({
         "textDecoration": "none"
     },
     "card image": {
-        "position": "relative"
+        "position": "relative",
+        "width": "110%"
     },
     "card image title": {
         "position": "absolute",

@@ -1,3 +1,30 @@
-<div class="" ng-controller="detailMovieCtrl">
-  {{$ctrl.hola}}
-</div>
+<section id="movie-detail-container" ng-controller="detailMovieCtrl">
+
+  <h1>{{infoPelicula.title}}</h1>
+
+  <div class="row">
+    <div class="columns medium-12 small-12 basic-info-movie">
+      <div class="columns medium-6 img-container">
+        <img ng-src="https://image.tmdb.org/t/p/w500/{{infoPelicula.backdrop_path}}" src="" alt="">
+      </div>
+      <div class="columns medium-6 info-container">
+        <p>Duración: <span class="data-basic">{{infoPelicula.runtime}}</span> </p>
+        <p>Fecha lanzamiento: <span>{{infoPelicula.release_date}}</span></p>
+        <p>Título original: <span>{{infoPelicula.original_title}}</span></p>
+        <p>Género: <span>{{infoPelicula.genres.name}}</span></p>
+        <p>Página web: <span> <a href="{{infoPelicula.homepage}}">{{infoPelicula.homepage}}</a> </span></p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="columns medium-12 small-12 overview-info">
+      <fieldset>
+        <legend>Sinopsis</legend>
+        {{infoPelicula.overview}}
+        <p class="tagline">{{infoPelicula.tagline}}</p>
+      </fieldset>
+    </div>
+  </div>
+
+
+</section>

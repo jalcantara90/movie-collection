@@ -16,7 +16,7 @@ movieCollection.config(['$routeProvider', function($routeProvider) {
     templateUrl: 'app/templates/movieCollection.html',
     controller: 'topRatedCtrl'
   })
-  .when('/detailMovie', {
+  .when('/detailMovie/:movieId', {
     template: '<detail-movie-component></detail-movie-component>'
   })
   .otherwise({
@@ -28,5 +28,17 @@ movieCollection.config(['$routeProvider', function($routeProvider) {
   return {
     restrict: 'E',
     templateUrl: './app/templates/header.html'
+  };
+}])
+.directive('finderTemplate', [function() {
+  return {
+    restrict: 'E',
+    templateUrl: './app/templates/finder.html'
+  };
+}])
+.directive('footerTemplate', [function() {
+  return {
+    restrict: 'E',
+    templateUrl: './app/templates/footer.html'
   };
 }])

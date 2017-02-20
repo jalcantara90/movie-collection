@@ -1,0 +1,53 @@
+#movie-detail-container h1{
+  display: flex;
+  justify-content: center;
+}
+
+.basic-info-movie {
+  display: flex;
+  margin-top:2%;
+}
+
+.img-container {
+  display: flex;
+  justify-content: flex-start;
+  padding:0;
+}
+.column.column {
+  padding:0 !important;
+}
+
+.column, .columns {
+  padding:0 !important;
+}
+
+.info-container {
+    padding-top:5px !important;
+    padding-left:2% !important;
+}
+.info-container p {
+  margin-left:2%;
+  color:#215DD4 ;
+  font-weight: bold;
+}
+
+.info-container span {
+  color:black;
+}
+
+fieldset {
+  padding:1%;
+  border: 3px #215DD4 solid;
+  border-radius:5px;
+  font-weight: bold;
+  color:black;
+}
+.overview-info {
+  margin-top:2%;
+}
+
+.tagline {
+  margin-top:1%;
+  text-align:center;
+  color: #8E2F35;
+}
