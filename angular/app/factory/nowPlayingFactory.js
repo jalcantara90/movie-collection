@@ -9,8 +9,8 @@ movieCollection.factory('nowPlayingFactory', function($http) {
                         factory.peliculas = data;
                         //returning data to resolving promise
                         return factory.peliculas;
-                    }, function (error) {
-                        return 'Error al recibir datos en Factory';
+                        }, function (error) {
+                            return 'Error al recibir datos en Factory';
                     });
             }
         };

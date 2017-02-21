@@ -1,6 +1,8 @@
 #movie-detail-container h1{
   display: flex;
   justify-content: center;
+  margin-top: 8%;
+  margin-bottom: 2%;
 }
 
 .basic-info-movie {
@@ -51,3 +53,4 @@ fieldset {
   text-align:center;
   color: #8E2F35;
 }
+

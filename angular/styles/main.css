@@ -84,3 +84,7 @@ h1 {
 .container-peliculas {
   margin-left: 2%;
 }
+
+#movie-detail-container {
+  min-height:900px;
+}
